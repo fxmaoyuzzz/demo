@@ -15,6 +15,9 @@ public class Able {
     private Integer num;
 
 
+    private String name;
+
+
     public Able(Integer id, Integer num) {
         this.id = id;
         this.num = num;
