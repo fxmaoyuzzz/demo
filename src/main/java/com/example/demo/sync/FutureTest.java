@@ -1,11 +1,9 @@
-package com.example.demo;
+package com.example.demo.sync;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
 import java.util.concurrent.*;
-import java.util.function.Supplier;
 
 /**
  * @author: zenghai.li

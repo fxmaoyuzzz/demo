@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.sync;
 
 import com.google.common.collect.Lists;
 

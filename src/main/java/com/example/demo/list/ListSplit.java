@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.list;
 
 import cn.hutool.core.util.ArrayUtil;
 import com.google.common.collect.Lists;

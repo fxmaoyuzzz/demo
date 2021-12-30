@@ -1,10 +1,9 @@
-package com.example.demo;
+package com.example.demo.list;
 
-import java.sql.Array;
+import com.example.demo.entity.Able;
+
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * @author: fxmaoyuzzzz
