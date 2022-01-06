@@ -19,12 +19,25 @@ public class ListLang {
     public static void main(String[] args) {
 
 
-        ArrayList<Integer> integers = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            integers.add(i);
+        //ArrayList<Integer> integers = new ArrayList<>();
+        //for (int i = 0; i < 10; i++) {
+        //    integers.add(i);
+        //}
+        //log.info("list:{}", JSON.toJSONString(integers));
+        //List<List<Integer>> split = ListUtil.split(integers, 4);
+        //System.out.println(split);
+
+        String content = "1,2,3";
+        String split = ",";
+        List<Integer> reuslt = new ArrayList<>();
+        if(StringUtils.isNotBlank(content)){
+            String[] arr=  content.split(split);
+            for(String obj : arr){
+                if(StringUtils.isNotBlank(obj)){
+                    reuslt.add(Integer.parseInt(obj.trim()));
+                }
+            }
         }
-        log.info("list:{}", JSON.toJSONString(integers));
-        List<List<Integer>> split = ListUtil.split(integers, 4);
-        System.out.println(split);
+        System.out.println(reuslt);
     }
 }
