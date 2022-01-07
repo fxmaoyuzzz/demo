@@ -1,11 +1,8 @@
 package com.example.demo.map;
 
-import cn.hutool.core.lang.hash.Hash;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * @author: zenghai.li
