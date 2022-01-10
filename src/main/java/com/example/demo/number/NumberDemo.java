@@ -21,5 +21,8 @@ public class NumberDemo {
         double div = NumberUtil.div(d, c);
 
         System.out.println(div);
+
+    //    merge test
+    //
     }
 }
