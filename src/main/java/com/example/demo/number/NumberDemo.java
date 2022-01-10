@@ -17,7 +17,10 @@ public class NumberDemo {
 
         double c = 10;
         double d = 3;
+
         double div = NumberUtil.div(d, c);
+
+        //test
         System.out.println(div);
     }
 }
