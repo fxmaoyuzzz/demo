@@ -1,5 +1,7 @@
 package com.example.demo.number;
 
+import cn.hutool.core.util.NumberUtil;
+
 /**
  * @author: zenghai.li
  * @Date: 2021/12/30
@@ -12,5 +14,10 @@ public class NumberDemo {
 
         Double b = a.doubleValue();
         System.out.println(b);
+
+        double c = 10;
+        double d = 3;
+        double div = NumberUtil.div(d, c);
+        System.out.println(div);
     }
 }
