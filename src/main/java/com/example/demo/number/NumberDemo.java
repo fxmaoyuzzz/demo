@@ -19,6 +19,8 @@ public class NumberDemo {
         double d = 3;
 
         double div = NumberUtil.div(d, c);
+
+
         System.out.println(div);
     }
 }
