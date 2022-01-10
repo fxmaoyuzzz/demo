@@ -20,7 +20,6 @@ public class NumberDemo {
 
         double div = NumberUtil.div(d, c);
 
-        //test
         System.out.println(div);
     }
 }
