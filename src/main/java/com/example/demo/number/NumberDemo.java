@@ -7,6 +7,8 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -51,9 +53,17 @@ public class NumberDemo {
         doubles.add(3.527d);
         doubles.add(4.016d);
         //List<String> collect = doubles.stream().map(item -> NumberUtil.roundStr(item, 1)).collect(Collectors.toList());
-        for (Double item : doubles) {
-            item = Double.valueOf(NumberUtil.roundStr(item, 2));
+        //for (Double item : doubles) {
+        //    item = Double.valueOf(NumberUtil.roundStr(item, 2));
+        //}
+        //System.out.println(doubles);
+        Iterator<Double> iterator = doubles.iterator();
+        while (iterator.hasNext()) {
+            Double next =  iterator.next();
+            
         }
-        System.out.println(doubles);
+        HashMap<Object, Object> map = new HashMap<>();
+        map.put("haha", "aaa");
+
     }
 }
