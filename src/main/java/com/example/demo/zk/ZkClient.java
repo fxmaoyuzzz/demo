@@ -70,6 +70,8 @@ public class ZkClient {
         Stat exists = zkClient.exists("/fxmaoyuzzz", false);
         System.out.println(exists == null ? "不存在" : "存在");
         CountDownLatch countDownLatch = new CountDownLatch(1);
+        StringBuffer stringBuffer = new StringBuffer();
+        StringBuilder stringBuilder = new StringBuilder();
         countDownLatch.await();
     }
 }
