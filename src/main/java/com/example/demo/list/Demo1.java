@@ -47,15 +47,16 @@ public class Demo1 {
             ables1.add(able);
         }
 
-        System.out.println(list1);
-        System.out.println(list2);
-        System.out.println(tmpSet);
-        System.out.println(result);
+        //System.out.println(list1);
+        //System.out.println(list2);
+        //System.out.println(tmpSet);
+        //System.out.println(result);
         Map<Integer, Integer> map1 = ables.stream().collect(Collectors.groupingBy(Able::getId, Collectors.summingInt(Able::getNum)));
         Map<Integer, List<String>> collect = ables.stream().collect(Collectors.groupingBy(Able::getId, Collectors.mapping(Able::getName, Collectors.toList())));
-        System.out.println(collect);
-        List<Able> result1 = ables1.stream().filter(k->map1.containsKey(k.getId())).map(k->new Able(k.getId(),map1.get(k.getId()) / k.getNum())).collect(Collectors.toList());
-        //System.out.println();
+        //System.out.println(collect);
+        List<Able> result1 = ables1.stream().filter( k->map1.containsKey(k.getId())).map(k->new Able(k.getId(),map1.get(k.getId()) / k.getNum())).collect(Collectors.toList());
+        System.out.println(ables);
+        System.out.println(map1);
 
     }
 
