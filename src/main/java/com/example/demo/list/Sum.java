@@ -29,6 +29,7 @@ public class Sum {
         int sum = list.stream().filter(item -> item.getNum() > 0).mapToInt(Able::getNum).sum();
         System.out.println(sum);
         System.out.println(sum1);
+
         Integer a = 10;
         if(a < sum){
             System.out.println("zzz");
