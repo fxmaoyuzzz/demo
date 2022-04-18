@@ -3,6 +3,8 @@ package com.example.demo.list;
 import com.example.demo.entity.Able;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
@@ -19,9 +21,15 @@ public class Sum {
             able.setNum(i);
             list.add(able);
         }
+        Able able = new Able();
+        able.setNum(-5);
+        list.add(able);
 
-        int sum = list.stream().mapToInt(Able::getNum).sum();
+        int sum1 = list.stream().mapToInt(Able::getNum).sum();
+        int sum = list.stream().filter(item -> item.getNum() > 0).mapToInt(Able::getNum).sum();
         System.out.println(sum);
+        System.out.println(sum1);
+        System.out.println(list);
         Integer a = 10;
         if(a < sum){
             System.out.println("zzz");
