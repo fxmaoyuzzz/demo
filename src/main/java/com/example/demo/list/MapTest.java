@@ -1,6 +1,7 @@
 package com.example.demo.list;
 
 import com.example.demo.entity.Able;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,21 +17,26 @@ public class MapTest {
 
     public static void main(String[] args) {
 
-        ArrayList<Able> list = new ArrayList<>();
+        //ArrayList<Able> list = new ArrayList<>();
+        //
+        //for (int i = 0; i < 5; i++) {
+        //    Able able = new Able();
+        //    able.setId(i);
+        //    able.setNum(i);
+        //    able.setName("zzz");
+        //    list.add(able);
+        //}
+        //Able able1 = new Able();
+        //able1.setId(100);
+        //able1.setNum(100);
+        //list.add(able1);
+        //
+        //Map<String, List<Able>> map = list.stream().collect(Collectors.groupingBy(Able::getName));
+        //System.out.println(map);
 
-        for (int i = 0; i < 5; i++) {
-            Able able = new Able();
-            able.setId(i);
-            able.setNum(i);
-            able.setName("zzz");
-            list.add(able);
+        Double s = null;
+        if (s == null || s.equals(-1.11)){
+            System.out.println("zzz");
         }
-        Able able1 = new Able();
-        able1.setId(100);
-        able1.setNum(100);
-        list.add(able1);
-
-        Map<String, List<Able>> map = list.stream().collect(Collectors.groupingBy(Able::getName));
-        System.out.println(map);
     }
 }
