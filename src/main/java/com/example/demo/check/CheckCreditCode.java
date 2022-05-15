@@ -6,14 +6,14 @@ import java.util.regex.Pattern;
 /**
  * @Author: zenghai.li
  * @Description:
- * @Date: 2022/04/29
+ * @Date: 2022/05/11
  */
-public class CheckPhone {
+public class CheckCreditCode {
 
     public static void main(String[] args) {
-        String phone = "13000000000";
-        Pattern pattern = Pattern.compile("^(13[0-9]|14[01456879]|15[0-35-9]|16[2567]|17[0-8]|18[0-9]|19[0-35-9])\\d{8}$");
-        Matcher match = pattern.matcher(phone);
+        String s = "913200007589576661";
+        Pattern pattern = Pattern.compile("^[0-9A-HJ-NPQRTUWXY]{2}\\d{6}[0-9A-HJ-NPQRTUWXY]{10}$");
+        Matcher match = pattern.matcher(s);
         if (!match.matches()){
             System.out.println(false);
         }else {
