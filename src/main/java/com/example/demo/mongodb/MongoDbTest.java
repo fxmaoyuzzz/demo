@@ -1,8 +1,16 @@
 package com.example.demo.mongodb;
 
 import cn.hutool.core.util.RandomUtil;
+import org.apache.shiro.codec.Hex;
 
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * @Author: zenghai.li
@@ -12,18 +20,13 @@ import java.util.concurrent.ThreadLocalRandom;
 public class MongoDbTest {
 
     public static void main(String[] args) {
-        //String numbers = RandomUtil.randomNumbers(6);
-        String baseString = "0123456789";
-        final StringBuilder sb = new StringBuilder(6);
+        String str = "198";
 
-        //if (6 < 1) {
-        //    length = 1;
-        //}
-        int baseLength = baseString.length();
-        for (int i = 0; i < 6; i++) {
-            int number = ThreadLocalRandom.current().nextInt(baseLength);
-            sb.append(baseString.charAt(number));
+        Pattern pattern = Pattern.compile("^[0-9]*$");
+        Matcher match = pattern.matcher(str);
+        if (!match.matches()){
+            System.out.println("false");
         }
-        System.out.println(sb.toString());
+        System.out.println("true");
     }
 }
