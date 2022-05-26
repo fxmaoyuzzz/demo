@@ -1,6 +1,12 @@
 package com.example.demo.test;
 
+import cn.hutool.core.util.IdUtil;
+import cn.hutool.core.util.RandomUtil;
 import com.example.demo.entity.Shop;
+
+import java.sql.Time;
+import java.util.Calendar;
+import java.util.UUID;
 
 /**
  * @Author: zenghai.li
@@ -10,12 +16,8 @@ import com.example.demo.entity.Shop;
 public class Test {
 
     public static void main(String[] args) {
-        Shop shop = new Shop();
-        shop.setReviewStatus(1);
-        shop.setStatusType(0);
+        String s = "20220608";
 
-        if (!shop.getReviewStatus().equals(1) && !shop.getStatusType().equals(1)){
-            System.out.println("zzz");
-        }
+        System.out.println(s.substring(2, 8));
     }
 }
